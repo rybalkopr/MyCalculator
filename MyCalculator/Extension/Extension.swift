@@ -14,3 +14,19 @@ extension Color{
   
 }
 
+extension Buttons {
+    func buttonToOperation() -> Operation{
+        switch self {
+        case .plus:
+            return.addition
+        case .minus:
+            return.substract
+        case .multiple:
+            return.multiply
+        case .divide:
+            return.divide
+        default:
+            return .none
+        }
+    }
+}
